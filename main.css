@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:cornflowerblue;
+}
+
+#app{
+    background-color: lightgray;
+    width: 500px;
+    margin:0 auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#time #value{
+    font-size: 48px;
+    font-weight: bolder;
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+.form{
+    display:flex;
+    justify-content: center;
+}
+
+#itTask{
+    border-radius: 5px;
+    height: 30px;
+}
+
+button, input[type="submit"]{
+    border:none;
+    background-color:#003366;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+}
+
+#tasks{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+    margin-top:20px;
+    font-weight: bold;
+}
+
+.task{
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+
+.task .completed{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.done{
+    display: inline-block;
+    padding: 5px;
+    background-color:#ccc;
+}

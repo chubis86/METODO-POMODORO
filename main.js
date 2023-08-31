@@ -67,11 +67,11 @@ function renderTasks(){
 }
 
 function startButtonHandler(id){
-    time = 25 * 60;
+    time = 6;
     current = id;
     const taskIndex = tasks.findIndex(task => task.id == id);
     taskName.textContent = tasks[taskIndex].title;
-
+    renderTime();
     timer = setInterval(()=>{
         timerHandler(id);
     },1000);
@@ -97,21 +97,22 @@ function renderTime(){
     timeDiv.textContent = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
 
-function markCompleted(){
+function markCompleted(id){
     const taskIndex = tasks.findIndex(task => task.id == id);
     tasks[taskIndex].completed=true;
 
 }
 
 function startBreak(){
-    time=5*60;
+    time=5;
     taskName.textContent='Break';
-    timerBreaK setInterval(()=>{
+    renderTime();
+    timerBreak = setInterval(()=>{
         timerBreakHandler();
     },1000);
 }
 
-function timerBreakHandler(id){
+function timerBreakHandler(){
     time--;
     renderTime();
     if(time==0){
