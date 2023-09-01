@@ -24,15 +24,15 @@ form.addEventListener('submit', e => {
 })
 
 function createTask(value){
-    
+    id++;    
     const newTask = {
         //id: (Math.random()*100).toString(36).slice(3),
-        id: id+1,
+        id: id,
         title: value,
         completed: false
     }
-
-    tasks.unshift(newTask);
+    
+    tasks.push(newTask);
     
 }
 

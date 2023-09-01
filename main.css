@@ -9,6 +9,7 @@ body{
     margin:0 auto;
     border: 1px solid black;
     padding: 20px;
+    border-radius: 5px;
 }
 
 #time #value{
@@ -61,4 +62,27 @@ button, input[type="submit"]{
     display: inline-block;
     padding: 5px;
     background-color:#ccc;
+}
+
+.descripcion{
+    margin:0 auto;
+    padding:20px;
+    color: white;
+    font-weight: bold;
+    font-size:1.2em;
+    width: 500px;
+    text-align: center;
+}
+
+#time{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#taskName{
+    color:black;
+    font-weight: bold;
 }
